@@ -18,3 +18,7 @@ window.onscroll = () => {
     navlist.classList.remove('active');
 };
 
+window.addEventListener("beforeunload",function(e){
+    var message = 'Are you sure want to leave?';
+    e.returnValue = message;
+});
