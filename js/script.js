@@ -19,6 +19,6 @@ window.onscroll = () => {
 };
 
 window.addEventListener('beforeunload',function(e){
-    var message = 'Are you sure want to leave?';
+    let message = 'Are you sure want to leave?';
     e.returnValue = message;
 });
